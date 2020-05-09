@@ -1,0 +1,19 @@
+AC_PREREQ([2.69])
+AC_INIT([padding], [1.0.0], [hey@lierda.com])
+AC_CONFIG_SRCDIR([main.c])
+AC_CONFIG_AUX_DIR(use)
+
+AC_CANONICAL_BUILD
+AC_CANONICAL_HOST
+
+AM_INIT_AUTOMAKE
+
+AC_PROG_CC
+
+m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
+
+AC_CONFIG_FILES([Makefile])
+
+AC_OUTPUT
+
+
